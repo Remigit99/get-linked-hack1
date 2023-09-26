@@ -1,0 +1,135 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+:root {
+    /*========== Colors ============*/
+    --clr-white: #fff;
+    --clr-black: #000;
+    --clr-1: #00a3ff;
+    --clr-2: #100b20;
+    --clr-3: #140d27;
+    --clr-4: #150e28;
+    --clr-5: #ff26b9;
+    --clr-6: #ff0000;
+
+
+    /*========== Width ============*/
+    --lg-width-container: 85%;
+    --md-width-container: 90%;
+    --sm-width-container: 96%;
+
+
+    /*========== Border Radius ============*/
+
+
+    /*========== Transition ============*/
+    --transition: all 350ms ease-in-out;
+
+
+}
+
+
+body {
+    width: 100vw;
+    height: 100dvh;
+    line-height: 1.4;
+    background-color: var(--clr-3);
+    color: var(--clr-white);
+    font-family: "Montserrat", cursive;
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+.container {
+    margin: 0 auto;
+    width: var(--lg-width-container);
+}
+
+a {
+    color: var(--clr-white);
+    font-size: 0.98rem;
+}
+
+.btn {
+    padding: 0.5rem 1.2rem;
+    background-color: var(--clr-1);
+
+}
+
+
+/*========== NAV =================*/
+
+nav {
+    height: 4rem;
+    width: 100vw;
+    box-shadow: 1px 0 2px rgb(88, 88, 88);
+    display: grid;
+    place-items: center;
+}
+
+.nav__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h2 span {
+    color: var(--clr-5);
+}
+
+.nav__right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+}
+
+.nav__links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+
+/*========== Header =================*/
+
+.header__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    gap: 2rem;
+}
+
+.header__left p {
+    margin: 1.5rem 0 2rem;
+    width: 70%;
+}
+
+.count__down {
+    margin-top: 2.5rem;
+    display: flex;
+    /* justify-content: baseline; */
+    gap: 1.5rem;
+}
+
+.count__down span {
+    display: flex;
+    /* justify-content: first baseline; */
+}
+
+
+.header__right img {
+    width: 35rem;
+}
