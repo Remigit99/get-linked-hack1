@@ -104,12 +104,28 @@ nav {
 
 
 /*========== Header =================*/
+header {
+    background-image: url("/Imgs/LPage.png");
+    /* background-position: center center; */
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 86vh;
+}
 
 .header__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     place-items: center;
-    gap: 2rem;
+    /* gap: 2rem; */
+    /* position: relative; */
+}
+
+.header__left {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    padding-top: 10rem;
+    flex-direction: column;
 }
 
 .header__left p {
